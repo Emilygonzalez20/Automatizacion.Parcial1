@@ -14,11 +14,11 @@ El proyecto consiste en el desarrollo de distintos procesos de automatización u
 
 Actualmente, el proyecto contempla cuatro procesos de automatización:
 
-- **Proceso 1:** Inicio de sesión y verificación de estado.
-- **Proceso 2:** Descarga de telemetría bruta.
-- **Proceso 3:** Web Scraping dinámico de estaciones.
-- **Proceso 4:** Extracción de sismos y avisos meteorológicos.
-- **Proceso 5:** Alertas 
+- **Proceso 1:** Obtención de token y verificación del estado del sistema.
+- **Proceso 2:** Descarga automática de telemetría
+- **Proceso 3:** Extracción de datos meteorológicos
+- **Proceso 4:** Extracción y consolidación de datos desde la API
+- **Proceso 5:** Evaluación de umbrales y publicación automática de alertas
 
 ## Procesos de Automatización
 
