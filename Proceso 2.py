@@ -9,7 +9,6 @@ from selenium.webdriver.chrome.options import Options
 import time
 import os
 
-
 URL_PRINCIPAL = "https://mantistcy.cl/clima/"
 RUTA_CHROMEDRIVER = (r"C:\Program Files\chromedriver\chromedriver.exe")
 CARPETA_DESCARGA = os.path.join(os.getcwd(),"telemetria_descargada")
@@ -32,7 +31,6 @@ def configurar_driver():
     
     service = Service(RUTA_CHROMEDRIVER)
     driver = webdriver.Chrome(service=service, options=opciones)
-
     #Inyecta un script JS antes de abrir pagina para evitar la dección de Selenium
     driver.execute_cdp_cmd('Page.addScriptToEvaluateOnNewDocument', {
         'source': '''
