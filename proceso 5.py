@@ -178,7 +178,6 @@ def verificar_estado_sistema(driver, link_final):
         print(f"Error verificando estado: {e}")
         return False
 
-
 if __name__ == "__main__":
     try:
         driver = configurar_driver()
