@@ -65,7 +65,7 @@ def abrir_pagina_api(driver):
 def obtener_token(driver):
     try:
         ventana_original = driver.current_window_handle
-        boton = driver.find_element(By.XPATH, "/html/body/div/div[1]/div/a")
+        boton = driver.find_element(By.XPATH, "//div[1]/div/a")
         boton.click()
 
         time.sleep(1)
@@ -122,7 +122,6 @@ def armar_link_con_token(token):
 
 
 def visualizar_datos_consolidados(driver, link_final):
-    """Navega al link final (con token) para dejar los datos VISIBLES en el navegador."""
     try:
         driver.get(link_final)
         WebDriverWait(driver, 10).until(
