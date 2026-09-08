@@ -10,7 +10,7 @@ import time
 import os
 
 URL_PRINCIPAL = "https://mantistcy.cl/clima/"
-RUTA_CHROMEDRIVER = (r"C:\Program Files\chromedriver\chromedriver.exe")
+RUTA_CHROMEDRIVER = ("C:/Users/tatia/Downloads/chromedriver-win64/chromedriver-win64/chromedriver.exe")
 CARPETA_DESCARGA = os.path.join(os.getcwd(),"telemetria_descargada")
 
 
@@ -28,10 +28,8 @@ def configurar_driver():
     }
     opciones.add_experimental_option("prefs",preferencias)
 
-    
     service = Service(RUTA_CHROMEDRIVER)
     driver = webdriver.Chrome(service=service, options=opciones)
-    #Inyecta un script JS antes de abrir pagina para evitar la dección de Selenium
     driver.execute_cdp_cmd('Page.addScriptToEvaluateOnNewDocument', {
         'source': '''
 
@@ -45,16 +43,12 @@ def configurar_driver():
     driver.maximize_window()
     return driver
 
-
 def main():
-
     driver = configurar_driver()
 
     try:
         print("Abriendo página...")
-
         driver.get(URL_PRINCIPAL)
-
         time.sleep(5)
 
         # Busca enlaces relacionados con la descarga

@@ -1,0 +1,16 @@
+﻿Estacion,Region,Temperatura,Humedad,MP2.5,Lluvia
+Arica,Arica y Parinacota,15°C,60%,16 µg/m³,2.2 mm
+Antofagasta,Antofagasta,15°C,60%,13 µg/m³,3.3 mm
+Copiapó,Atacama,15°C,60%,10 µg/m³,22.4 mm
+Concón,Valparaíso,15°C,60%,13 µg/m³,11.7 mm
+Viña del Mar,Valparaíso,16.1°C,54%,10 µg/m³,11.7 mm
+Valparaíso,Valparaíso,15°C,60%,10 µg/m³,17.9 mm
+Santiago,Metropolitana,15°C,60%,47 µg/m³,15.3 mm
+Puente Alto,Metropolitana,15°C,60%,14 µg/m³,21.3 mm
+San José de Maipo,Metropolitana,15°C,60%,14 µg/m³,40.5 mm
+Litueche,O'Higgins,15°C,60%,15 µg/m³,21.2 mm
+Concepción,Biobío,13.1°C,67%,8 µg/m³,44.4 mm
+Temuco,La Araucanía,12.3°C,57%,6 µg/m³,31.5 mm
+Puerto Montt,Los Lagos,10.2°C,75%,4 µg/m³,77.1 mm
+Coyhaique,Aysén,7°C,67%,0 µg/m³,26.2 mm
+Punta Arenas,Magallanes,7.4°C,67%,0 µg/m³,9.9 mm

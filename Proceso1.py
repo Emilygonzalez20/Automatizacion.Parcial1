@@ -15,7 +15,7 @@ import json
 
 URL_API_REST = "https://mantistcy.cl/clima/api_rest.php"
 LINK_DATOS = "https://mantistcy.cl/clima/api_rest.php?seccion=todas"
-RUTA_CHROMEDRIVER = r"C:\Program Files\chromedriver\chromedriver.exe"
+RUTA_CHROMEDRIVER = ("C:/Users/tatia/Downloads/chromedriver-win64/chromedriver-win64/chromedriver.exe")
 
 
 def configurar_driver():
@@ -26,8 +26,6 @@ def configurar_driver():
 
     service = Service(RUTA_CHROMEDRIVER)
     driver = webdriver.Chrome(service=service, options=opciones)
-
-    # Inyecta un script JS antes de abrir la página para evitar la detección de Selenium
     driver.execute_cdp_cmd('Page.addScriptToEvaluateOnNewDocument', {
         'source': '''
             Object.defineProperty(navigator, 'webdriver', {
@@ -38,7 +36,6 @@ def configurar_driver():
 
     driver.maximize_window()
     return driver
-
 
 def abrir_pagina_api(driver):
     try:
@@ -60,7 +57,6 @@ def abrir_pagina_api(driver):
     except Exception as e:
         print(f"Error inesperado: {e}")
         return False
-
 
 def obtener_token(driver):
     try:
@@ -114,12 +110,10 @@ def obtener_token(driver):
         print(f"Error inesperado al obtener el token: {e}")
         return None
 
-
 def armar_link_con_token(token):
     link_final = f"{LINK_DATOS}&token={token}"
     print("Link con token armado:", link_final)
     return link_final
-
 
 def visualizar_datos_consolidados(driver, link_final):
     try:
@@ -141,7 +135,6 @@ def visualizar_datos_consolidados(driver, link_final):
     except Exception as e:
         print(f"Error inesperado al mostrar los datos consolidados: {e}")
         return False
-
 
 def verificar_estado_sistema(driver, link_final):
     try:

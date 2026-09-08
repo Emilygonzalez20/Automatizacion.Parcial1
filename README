@@ -1,0 +1,62 @@
+# Automatización - Evaluación 1
+
+## Integrantes:
+
+- Benjamin Diaz
+- Emily Gonzalez
+
+
+## Descripción del Proyecto
+
+Este proyecto corresponde a la Evaluación 1 de la asignatura de AUTOMATIZACION DE PROCESOS ROBOTICOS I.
+
+El proyecto consiste en el desarrollo de distintos procesos de automatización utilizando Python, orientados a la obtención, procesamiento y extracción de información desde diferentes fuentes.
+
+Actualmente, el proyecto contempla cuatro procesos de automatización:
+
+- **Proceso 1:** Inicio de sesión y verificación de estado.
+- **Proceso 2:** Descarga de telemetría bruta.
+- **Proceso 3:** Web Scraping dinámico de estaciones.
+- **Proceso 4:** Extracción de sismos y avisos meteorológicos.
+- **Proceso 5:** Alertas 
+
+## Procesos de Automatización
+
+### Proceso 1 - Inicio de sesión y verificación de estado
+
+Proceso encargado de realizar el inicio de sesión y verificar el estado correspondiente.
+
+### Proceso 2 - Descarga de telemetría bruta
+
+Proceso encargado de realizar la descarga de datos de telemetría bruta para su posterior procesamiento.
+
+### Proceso 3 - Web Scraping dinámico de estaciones
+
+Proceso encargado de obtener información de estaciones mediante Web Scraping dinámico.
+
+### Proceso 4 - Extracción de sismos y avisos meteorológicos
+
+Proceso encargado de extraer información relacionada con sismos y avisos meteorológicos.
+
+### Proceso 5 - Alerta 
+
+Proceso encargado de alertar si el valor de MP2.5 supera el umbral establecido, se genera una alerta; de lo contrario, los datos se registran como normales.
+
+
+## Tecnologías utilizadas
+
+- **Lenguaje:** Python
+- **Automatización:** Python
+
+## Estructura del Proyecto
+
+```text
+Automatizacion.Parcial1/
+│
+├── Proceso1.py
+├── Proceso2.py
+├── Proceso3.py
+├── Proceso4.py
+├── Proceso5.py
+├── README.md
+└── ...
