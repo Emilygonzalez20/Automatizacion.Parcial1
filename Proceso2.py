@@ -10,7 +10,7 @@ import time
 import os
 
 URL_PRINCIPAL = "https://mantistcy.cl/clima/"
-RUTA_CHROMEDRIVER = ("C:/Users/tatia/Downloads/chromedriver-win64/chromedriver-win64/chromedriver.exe")
+RUTA_CHROMEDRIVER = r"C:\Program Files\chromedriver\chromedriver.exe"
 CARPETA_DESCARGA = os.path.join(os.getcwd(),"telemetria_descargada")
 
 

@@ -14,7 +14,7 @@ import csv
 import time
 
 ARCHIVO_DATOS = "datos_meteorologicos.csv"
-RUTA_CHROMEDRIVER = "C:/Users/tatia/Downloads/chromedriver-win64/chromedriver-win64/chromedriver.exe"
+RUTA_CHROMEDRIVER = r"C:\Program Files\chromedriver\chromedriver.exe"
 URL_FORMULARIO_ALERTAS = "https://mantistcy.cl/clima/avisos.php" 
 
 def configurar_driver():

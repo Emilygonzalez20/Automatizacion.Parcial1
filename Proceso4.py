@@ -15,7 +15,7 @@ import json
 
 URL_API_REST = "https://mantistcy.cl/clima/api_rest.php"
 LINK_DATOS = "https://mantistcy.cl/clima/api_rest.php?seccion=todas"
-RUTA_CHROMEDRIVER = ("C:/Users/tatia/Downloads/chromedriver-win64/chromedriver-win64/chromedriver.exe")
+RUTA_CHROMEDRIVER = r"C:\Program Files\chromedriver\chromedriver.exe"
 ARCHIVO_SALIDA = "datos_consolidados.csv"
 
 def configurar_driver():
